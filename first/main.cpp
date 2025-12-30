@@ -2,5 +2,7 @@
 using namespace std;
 int main()
 {
-    cout << "prime";
+    cout << "prime" << endl;
+    cout << '\n';
+    cout << "prime2";
 }
