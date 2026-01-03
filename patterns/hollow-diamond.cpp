@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int num;
+    cout << "Enter the value of n: " << endl;
     cin >> num;
 
     int n = num / 2;
