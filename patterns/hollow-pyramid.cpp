@@ -23,7 +23,7 @@ int main()
 
             // /* code */
             // print star for first col and last col
-            if (col == 0 || col == row + 1 - 1)
+            if (col == 0 || col == row + 1 - 1) // can also write row 
             {
                 cout << "* ";
             }
