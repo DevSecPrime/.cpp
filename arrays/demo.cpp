@@ -20,5 +20,25 @@ int main()
         cout << arr[i] << " " << endl; // Here, i is working as an index
     }
 
+    // Take input in arr
+    int b[5];
+    int output[10];
+
+    n = 5;
+    cout << "Enter 5 values: " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        /* code */
+        cin >> a[0];
+        output[i] = a[0];
+    }
+
+    cout << "Ans is :" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        /* code */
+        cout << output[i] << endl;
+    }
+
     return 0;
 }
