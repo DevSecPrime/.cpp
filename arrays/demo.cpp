@@ -29,8 +29,10 @@ int main()
     for (int i = 0; i < n; i++)
     {
         /* code */
-        cin >> a[0];
-        output[i] = a[0];
+        cout << "Enter the value of index " << i << ":";
+        cin >> a[i];
+        cout << endl;
+        output[i] = a[i];
     }
 
     cout << "Ans is :" << endl;
