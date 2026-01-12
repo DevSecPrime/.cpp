@@ -8,9 +8,16 @@ void printExtremArray(int arr[], int size)
     int right = size - 1;
     while (left <= right)
     {
-        /* code */
-        cout << arr[left] << " ";
-        cout << arr[right] << " ";
+        if (left == right)
+        {
+            cout << arr[left] << " ";
+        }
+        else
+        {
+            /* code */
+            cout << arr[left] << " ";
+            cout << arr[right] << " ";
+        }
         left++;
         right--;
     }
@@ -18,8 +25,8 @@ void printExtremArray(int arr[], int size)
 
 int main()
 {
-    int arr[6] = {10, 20, 30, 40, 50, 60};
-    int size = 6;
+    int arr[5] = {10, 20, 30, 40, 50};
+    int size = 5;
 
     printExtremArray(arr, size);
     return 0;
