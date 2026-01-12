@@ -228,33 +228,74 @@ int main()
     //   *   *
     //  *     *
     // *********
+    // int n = 5;
+
+    // for (int row = 0; row < n; row++)
+    // {
+    //     // spaces
+    //     for (int space = 0; space < n - row - 1; space++)
+    //     {
+    //         cout << " ";
+    //     }
+
+    //     // stars and spaces
+    //     for (int col = 0; col < 2 * row + 1; col++)
+    //     {
+    //         if (col == 0 || col == 2 * row)
+    //         {
+    //             cout << "*";
+    //         }
+    //         else
+    //         {
+    //             cout << " ";
+    //         }
+    //     }
+
+    //     cout << endl;
+    // }
+
+    // // bottom row
+    // for (int i = 0; i < 2 * n - 1; i++)
+    //     cout << "*";
+
+    //     Number Increasing Patterns
+    // 1
+    // 12
+    // 123
+    // 1234
+    // 12345
+
+    // int n = 5;
+    // for (int row = 0; row < n; row++)
+    // {
+    //     /* code */
+    //     for (int col = 0; col < row + 1; col++)
+    //     {
+    //         /* code */
+    //         cout << col + 1;
+    //     }
+
+    //     cout << endl;
+    // }
+
+    // 1
+    // 23
+    // 456
+    // 78910
+
     int n = 5;
+    int floydNumber = 1;
 
-    for (int row = 0; row < n; row++)
+    // i = row
+    // j = column
+    for (int i = 0; i < n; i++)
     {
-        // spaces
-        for (int space = 0; space < n - row - 1; space++)
+        /* code */
+        for (int j = 0; j < i + 1; j++)
         {
-            cout << " ";
+            /* code */
+            cout << floydNumber++ << " ";
         }
-
-        // stars and spaces
-        for (int col = 0; col < 2 * row + 1; col++)
-        {
-            if (col == 0 || col == 2 * row)
-            {
-                cout << "*";
-            }
-            else
-            {
-                cout << " ";
-            }
-        }
-
         cout << endl;
     }
-
-    // bottom row
-    for (int i = 0; i < 2 * n - 1; i++)
-        cout << "*";
 }
