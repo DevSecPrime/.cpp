@@ -15,22 +15,13 @@ void printVector(vector<int> v)
         cout << v[i] << " ";
         // OR
         // cout << v.at(i) << " ";
-        // Both print the same output
+        // Both print the same output (at() is safer)
     }
 }
 
 int main()
 {
     vector<int> v; // Declare an empty vector
-
-    /*
-        Uncomment below lines to insert static values
-        v.push_back(1);
-        v.push_back(5);
-        v.push_back(7);
-        v.push_back(10);
-        v.push_back(25);
-    */
 
     int n;
     cout << "Enter value of n: " << endl;
@@ -47,18 +38,36 @@ int main()
         v.push_back(data);
     }
 
-    /*
-        Vector allows dynamic insertion
-        This is not possible with normal arrays
-    */
-    // for (int i = 0; i < 6; i++)
-    // {
-    //     v.push_back(13);
-    // }
-
     // Print vector before pop operation
     cout << "Printing all element: " << '\n';
     printVector(v);
+
+    cout << endl
+         << endl;
+
+    /*
+        Accessing elements examples
+    */
+    cout << "First element using v[0]: " << v[0] << endl;
+
+    cout << "First element using front(): " << v.front() << endl;
+
+    cout << "Last element using back(): " << v.back() << endl;
+
+    cout << "Last element using size()-1 index: "
+         << v[v.size() - 1] << endl;
+
+    cout << endl;
+
+    /*
+        for-each (range-based for loop) example
+        Cleaner way to traverse a vector
+    */
+    cout << "Printing using for-each loop: " << endl;
+    for (int element : v) // can also use auto element:v --> will automaticaly select the type
+    {
+        cout << element << " ";
+    }
 
     cout << endl
          << endl;
