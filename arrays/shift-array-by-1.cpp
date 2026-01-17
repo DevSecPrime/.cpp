@@ -32,10 +32,10 @@ int main()
     int n = 6;
 
     // function call
-    shiftArrayRightByOne(arr, n); /// shift right by one
+    // shiftArrayRightByOne(arr, n); /// shift right by one
 
     // shift left by one
-    // shiftLeftByOne(arr, n);
+    shiftLeftByOne(arr, n);
 
     // Print ans
     for (int i = 0; i < n; i++)
