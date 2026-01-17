@@ -18,7 +18,7 @@ int main()
 
     //
     cout << "Enter " << n << " elements : " << '\n';
-    int *arr = new int[n]; // initialise the value of n --> may use int arr[n]; but not valid because its ont supported by the compiler
+    int *arr = new int[n]; // initialise the value of n --> may use int arr[n]; but not valid because its ont supported by the compiler , Each element would be 0, or garbage value
     for (int i = 0; i < n; i++)
     {
         /* code */
