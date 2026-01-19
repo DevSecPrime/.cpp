@@ -16,6 +16,21 @@ void printArray(int arr[][4], int row, int col)
     }
 }
 
+void colWisePrint(int arr[][4], int row, int col)
+{
+    for (int i = 0; i < col; i++)
+    {
+        /* code */
+        for (int j = 0; j < row; j++)
+        {
+            /* code */
+            cout << arr[j][i] << " ";
+        }
+
+        cout << endl;
+    }
+}
+
 int main()
 {
     int arr[3][4] = {
@@ -25,7 +40,12 @@ int main()
 
     int row = 3;
     int col = 4;
+    cout << "Row wise print: " << endl;
     printArray(arr, row, col);
+
+    cout << endl;
+    cout << "Column wise print: " << endl;
+    colWisePrint(arr, row, col);
 
     return 0;
 }
