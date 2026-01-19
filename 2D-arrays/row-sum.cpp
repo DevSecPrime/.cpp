@@ -17,6 +17,22 @@ void printRowSum(int arr[][5], int row, int col)
     }
 };
 
+void printColumnWiseSum(int arr[][5], int row, int col)
+{
+    for (int i = 0; i < col; i++)
+    {
+        /* code */
+        int sum = 0;
+        for (int j = 0; j < row; j++)
+        {
+            /* code */
+            sum = sum + arr[j][i];
+        }
+
+        cout << sum << endl;
+    }
+}
+
 int main()
 {
     int arr[3][5] = {
@@ -26,5 +42,11 @@ int main()
 
     int row = 3;
     int col = 5;
+
+    cout << "Print row wise sum: " << endl;
     printRowSum(arr, row, col);
+
+    cout << endl;
+    cout << "Print column wise sum: " << endl;
+    printColumnWiseSum(arr, row, col);
 }
